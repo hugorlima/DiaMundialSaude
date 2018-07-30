@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  word-wrap: break-word;
+}
+img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+.regular {
+  font-weight: 400;
+}
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  height: auto;
+}
+body {
+  position: relative;
+  display: block;
+}
+.hidden {
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.row {
+  width: 1200px;
+  margin: 0 auto;
+}
+.row .column,
+.row .columns {
+  float: left;
+  padding: 0 10px;
+}
+.row .row {
+  width: auto;
+  margin: 0 -10px;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* Largura mínima de 0px e máxima de 1024px*/
+@media screen and (max-width: 64em) {
+  .row {
+    width: 100%;
+  }
+}
+/* Largura mínima de 960px */
+@media screen and (min-width: 60em) {
+  .row {
+    max-width: 100%;
+  }
+  .row .column.one,
+  .row .columns.one {
+    width: 25%;
+  }
+  .row .column.two,
+  .row .columns.two {
+    width: 50%;
+  }
+  .row .column.three,
+  .row .columns.three {
+    width: 75%;
+  }
+  .row .column.four,
+  .row .columns.four {
+    width: 100%;
+  }
+  .row .column.push-one,
+  .row .columns.push-one {
+    margin-left: 25%;
+  }
+  .row .column.push-two,
+  .row .columns.push-two {
+    margin-left: 50%;
+  }
+  .row .column.push-three,
+  .row .columns.push-three {
+    margin-left: 75%;
+  }
+  .row .column.push-four,
+  .row .columns.push-four {
+    margin-left: 100%;
+  }
+  .row .row {
+    margin: 0 auto !important;
+  }
+}
+/* Largura mínima de 0px e máxima de 768px*/
+@media screen and (min-width: 0em) and (max-width: 59.938em) {
+  .row {
+    width: auto;
+  }
+  .row .column,
+  .row .columns {
+    padding: 0 10px;
+  }
+  .row .column.vertical-padding,
+  .row .columns.vertical-padding {
+    padding: 10px;
+  }
+  .row .column.one,
+  .row .columns.one {
+    width: 25%;
+  }
+  .row .column.two,
+  .row .columns.two {
+    width: 50%;
+  }
+  .row .column.three,
+  .row .columns.three {
+    width: 75%;
+  }
+  .row .column.four,
+  .row .columns.four {
+    width: 100%;
+  }
+  .row .column.push-half,
+  .row .columns.push-half {
+    margin-left: 12.5%;
+  }
+  .row .column.push-one,
+  .row .columns.push-one {
+    margin-left: 25%;
+  }
+  .row .column.push-two,
+  .row .columns.push-two {
+    margin-left: 50%;
+  }
+  .row .column.push-three,
+  .row .columns.push-three {
+    margin-left: 75%;
+  }
+  .row .column.push-four,
+  .row .columns.push-four {
+    margin-left: 100%;
+  }
+  .row .row {
+    width: auto;
+    margin: 0;
+  }
+}
